@@ -1,4 +1,5 @@
-import Expenses from "./components/Expenses";
+import React from "react";
+import Expenses from "./components/Expenses/Expenses";
 
 function App() {
   const expenses = [
@@ -23,12 +24,21 @@ function App() {
     },
   ];
 
+  // This return just needs reactDom (import on line2)
   return (
     <div>
       <h2>Let's get started!</h2>
       <Expenses items={expenses} />
     </div>
   );
+
+  // This is legacy react return code with React import on line 1
+  // return React.createElement(
+  //   "div",
+  //   {},
+  //   React.createElement("h2", {}, "Ars Got Started!"),
+  //   React.createElement(Expenses, {items:expenses})
+  // );
 }
 
 export default App;
