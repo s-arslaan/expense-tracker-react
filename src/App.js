@@ -1,5 +1,6 @@
 import React from "react";
 import Expenses from "./components/Expenses/Expenses";
+import NewExpense from "./components/NewExpense/NewExpense";
 
 const App = () => {
   const expenses = [
@@ -27,7 +28,7 @@ const App = () => {
   // This return just needs reactDom (import on line2)
   return (
     <div>
-      <h2>Let's get started!</h2>
+      <NewExpense />
       <Expenses items={expenses} />
     </div>
   );
@@ -39,6 +40,6 @@ const App = () => {
   //   React.createElement("h2", {}, "Ars Got Started!"),
   //   React.createElement(Expenses, {items:expenses})
   // );
-}
+};
 
 export default App;
