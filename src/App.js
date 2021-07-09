@@ -42,7 +42,7 @@ const App = () => {
     </div>
   );
 
-  // This is legacy react return code with React import on line 1
+  // This is legacy react return code (withput JSX) with React import on line 1
   // return React.createElement(
   //   "div",
   //   {},
