@@ -11,7 +11,7 @@ const ExpensesList = (props) => {
   return (
     <ul className="expenses-list">
       {/* map function loops into each element of expense array */}
-      {props.items.map((expense) => (
+      {props.items.map( (expense) => (
         <ExpenseItem
           key={expense.id}
           title={expense.title}
